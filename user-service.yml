@@ -1,0 +1,18 @@
+spring:
+    datasource:
+      driver-class-name: org.h2.Driver
+      url: jdbc:h2:mem:testdb
+      username: sa
+      password: '{cipher}AQBvRJ3qV7sk8cs7ZdoHwRj92qePVTiwxtDcHS1E2kXq5kNEhm6jGD7KYEXL98HMFYxzxu8NoSRo5ocYsgSqxILDwWH6S/NaMK2ZO2MdfgM+J3z+oxMlt85Pz451yd5c69idDTuHHVIlv3jq/co3AP02JBwdSRsU1eQ5xN0s61VDvijx+1RgBQ2OjG+0M1sim0s/18PkBdJeE8Gcwuy0uniekH4KinNALY42zjaBmONKzSHvMxNVmOiW0oyZpv1hVXaXBSTZ4aeUjk72AqeiBxVNoVTgNI64dM9rsVFr5E4i3Mo/o6UNYQc9Nc7JBuLkhwwGzqjyBdPrPVa/Sb2enpKy8bQa24VOEeD76jGw0oTxOhKwzv4/RELuYq2FspYFkjw='
+token:
+  expiration_time: 86400002
+  secret: userSErvice_default_fwefas@fsfe3.com2fwefas@fsfe3.com2fwefas@fsfe3.com2fwefas@fsfe3.com2
+
+gateway:
+  ip: 192.168.0.8
+
+order_service:
+#  url: http://127.0.0.1:8000/order-service/%s/orders
+  url: http://ORDER-SERVICE/order-service/%s/orders
+  exception:
+    order_is_emptyda: User's order is emptyimda2
